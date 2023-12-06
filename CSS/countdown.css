@@ -7,14 +7,14 @@
   position: relative;
   top: 50vh;
   transform: translate3d(0, -50%, 0);
-  font-size: 4.5rem;
+  font-size: 5vw;
   color: chartreuse;
   text-align: center;
   line-height: 1.6;
 }
 #countdown span {
   font-family: "7-seg";
-  font-size: 6rem;
+  font-size: 8vw;
   vertical-align: baseline;
 }
 
