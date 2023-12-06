@@ -1,5 +1,5 @@
 // 目標日時を指定（年, 月（0-11）, 日, 時, 分, 秒）
-const targetDate = new Date( 2024, 0, 20, 10, 0, 0 );
+const targetDate = new Date( 2024, 2, 11, 9, 0, 0 );
 
 // カウントダウンタイマー
 const ele = document.getElementById( 'countdown' );
