@@ -1,0 +1,2 @@
+@import"DSEG7Modern-BoldItalic.ttf";@font-face{font-family:"7-seg";src:url("DSEG7Modern-BoldItalic.ttf") format("truetype"),url("DSEG7Modern-BoldItalic.ttf") format("opentype")}#countdown{position:relative;top:50vh;transform:translate3d(0, -50%, 0);font-size:4.5rem;color:#7fff00;text-align:center;line-height:1.6}#countdown span{font-family:"7-seg";font-size:6rem;vertical-align:baseline}body{background-color:#000}
+/*# sourceMappingURL=countdown.min.css.map */

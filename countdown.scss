@@ -1,0 +1,40 @@
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: otf ttf) {
+  $src: null;
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $format: map-get($formats, $ext);
+    $src: append($src, url(quote($path)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style:  $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+@import url('DSEG7Modern-BoldItalic.ttf');
+@include font-face('7-seg','DSEG7Modern-BoldItalic.ttf',null,null,ttf otf);
+
+#countdown{
+    position: relative;
+    top: 50vh;
+    transform: translate3d( 0, -50%, 0 );
+    font-size: 4.5rem;
+    color: chartreuse;
+    text-align: center;
+    line-height: 1.6;
+    span{
+      font-family: '7-seg';
+      font-size: 6rem;
+      vertical-align: baseline;
+    }
+  }
+body{
+  background-color: black;
+}
